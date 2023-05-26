@@ -1,0 +1,49 @@
+.bgvideo {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgvideo video {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video-text {
+    font-size: 9em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 100, 0, 0.649);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.anterior-video {
+    z-index: 2;
+}
+
+@media (max-width: 1200px) {
+    .video-text {
+        font-size: 7em;
+    }
+}
+
+@media (max-width: 900px) {
+    .video-text {
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 600px) {
+    .video-text {
+        font-size: 3em;
+    }
+}
